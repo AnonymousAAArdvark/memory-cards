@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.js": "/static/js/main.033f314c.chunk.js",
+    "main.js.map": "/static/js/main.033f314c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c905be57.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c905be57.js.map",
+    "static/js/2.e578d01b.chunk.js": "/static/js/2.e578d01b.chunk.js",
+    "static/js/2.e578d01b.chunk.js.map": "/static/js/2.e578d01b.chunk.js.map",
+    "index.html": "/index.html",
+    "static/js/2.e578d01b.chunk.js.LICENSE.txt": "/static/js/2.e578d01b.chunk.js.LICENSE.txt",
+    "static/media/Bang.b6e2ca4c.png": "/static/media/Bang.b6e2ca4c.png",
+    "static/media/Blast.0a004047.png": "/static/media/Blast.0a004047.png",
+    "static/media/Child.30589321.png": "/static/media/Child.30589321.png",
+    "static/media/DS.c187d388.png": "/static/media/DS.c187d388.png",
+    "static/media/Drive_Knight.d01e6600.png": "/static/media/Drive_Knight.d01e6600.png",
+    "static/media/Flash.a34a7601.png": "/static/media/Flash.a34a7601.png",
+    "static/media/Genos.626ea622.png": "/static/media/Genos.626ea622.png",
+    "static/media/MK.ae529e71.png": "/static/media/MK.ae529e71.png",
+    "static/media/Metal_Bat.d2040303.png": "/static/media/Metal_Bat.d2040303.png",
+    "static/media/Pig_God.5cc23f66.png": "/static/media/Pig_God.5cc23f66.png",
+    "static/media/TTM.07139fa7.png": "/static/media/TTM.07139fa7.png",
+    "static/media/Tats.f83d3618.png": "/static/media/Tats.f83d3618.png",
+    "static/media/WDM.2daf24e6.png": "/static/media/WDM.2daf24e6.png",
+    "static/media/Zombie.79866581.png": "/static/media/Zombie.79866581.png",
+    "static/media/logo.6f0e5c21.png": "/static/media/logo.6f0e5c21.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c905be57.js",
+    "static/js/2.e578d01b.chunk.js",
+    "static/js/main.033f314c.chunk.js"
+  ]
+}
