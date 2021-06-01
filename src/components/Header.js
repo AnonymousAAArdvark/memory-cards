@@ -25,7 +25,7 @@ const HeaderWrapper = styled.header`
 
 const Title = styled.h1`
   color: ${({ theme }) => theme.colors.red};
-  font-size: 8rem;
+  font-size: 5vw;
   line-height: 1.5;
   font-family: "Lato", sans-serif;
 `;
