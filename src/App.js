@@ -1,24 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
+import { fetchCards, shuffleArray } from "./utils";
 
-function App() {
+const App = () => {
+  const [heroes, setHeroes] = useState([]);
+  const [clickedHeroes, setClickedHeroes] = useState([]);
+  const [currentScore, setCurrentScore] = useState(0);
+  const [bestScore, setBestScore] = useState(0);
+
+  useEffect(() => {
+    setHeroes(shuffleArray(fetchCards()));
+  }, [])
+
+  const handleCardClick = (e) => {
+    const heroName = e.target.parentNode.lastChild.textContent;
+    playRound(heroName);
+    setHeroes(shuffleArray(heroes));
+  }
+
+  const playRound = (heroName) => {
+    if(clickedHeroes.includes(heroName)) {
+      resetGame();
+    }
+    else {
+      const newScore = currentScore + 1;
+      if(newScore > bestScore) setBestScore(newScore);
+      setCurrentScore(newScore);
+      setClickedHeroes((prevState) => [...prevState, heroName]);
+    }
+  }
+
+  const resetGame = () => {
+    setClickedHeroes([]);
+    setCurrentScore(0);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Main
+        heroes={heroes}
+        handleCardClick={handleCardClick}
+        currentScore={currentScore}
+        bestScore={bestScore}
+      />
+      <Footer />
+    </>
   );
 }
 
